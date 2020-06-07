@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:text="Login Activity"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        />
+    <CheckBox
+        android:id="@+id/checkbox_remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remember me"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login "
+        android:id="@+id/button_login"
+        android:onClick="onClickLogin"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/tv_register_here"
+        android:text="New User ? Register Here ->"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+
+</LinearLayout>
